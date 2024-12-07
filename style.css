@@ -1,0 +1,132 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eaeaea;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #1f2937;
+    padding: 20px 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    margin-right: 30px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #4b5563;
+    transform: scale(1.1);
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Buttons */
+.btn {
+    padding: 15px 30px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    background-color: #1d4ed8;
+    transform: translateY(2px);
+}
+
+/* Form Elements */
+input[type="text"], input[type="password"], select, input[type="file"] {
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, select:focus, input[type="file"]:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+/* Headings */
+h1, h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .navbar ul li {
+        margin-bottom: 15px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    input[type="text"], input[type="password"], select, input[type="file"] {
+        font-size: 18px;
+    }
+}
